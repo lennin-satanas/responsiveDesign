@@ -1,0 +1,78 @@
+En esta clase aprenderás las medidas que existen en el campo del responsive design.
+
+Lo primero que debes tener en cuenta es que estas medidas son maleables, en la medida
+ en que dependen de su fuente de origen o medida madre. Entre ellas se encuentran el 
+ porcentaje (longitud referente al tamaño de los elementos padre), los em (unidad relativa
+al tamaño de fuente especificada más cercano), los rem (unidad relativa al tamaño de
+fuente especificada en el ancestro más lejano, como html o body) y tamaños del viewport
+vw/vh (longitud relativa porcentual con respecto al viewport).
+
+Unidades relativas de medida:
+
+Porcentaje: longitud referente al tamaño de los elementos padre
+em: unidad relativa al tamaño de fuente especificada más cercano
+rem: unidad relativa al tamaño de fuente especificada en el ancestro más lejano (html o body)
+vw / vh: unidad relativa porcentual con respecto al viewport
+
+media Queries
+
+gracias a este modulo exite responsive desing
+
+mudulo CSS3S que permite adaptar la representacion del contenido a caracteristicas del dispositivo
+
+@media media type and (condición) { }
+se compone de un media type y una o mas condiciones
+
+ejemplo
+
+@media screen type and (max-width: 768px) { }
+todas las pantallas con un ancho inferior o igual a 768px cumplen con esta funcion
+
+@media screen type and (max-width: 768px) and (min-width: 480px) { }
+todas las pantallas con un ancho de 480px hasta 768px cumplen con esta funcion
+
+Mobile Firts
+
+@media screen type and (max-width: 320px) { }
+@media screen type and (max-width: 480px) { }
+@media screen type and (max-width: 768px) { }
+@media screen type and (max-width: 1024px) { }
+usa min-width (min-width = desde)
+
+Desktop Firts
+
+@media screen type and (min-width: 1024px) { }
+@media screen type and (min-width: 768px) { }
+@media screen type and (min-width: 480px) { }
+@media screen type and (min-width: 320px) { }
+usa max-width (max-width = hasta)
+
+max-width = hasta
+min-width = desde
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Formas de incluir media queries
+En esta clase aprenderás a insertar un media querie en tu proyecto. Para ello,
+ vas a trabajar sobre tu hoja de estilos, utilizando el tag style.
+
+El primer paso para lograr esto será realizar una nueva hoja de estilos en tu proyecto,
+ésta debe contar, en primer lugar, con la etiqueta link; harás uso de la aplicación de medidas para la pantalla,
+bordes y colores, entre otras características.
+
+Aquí vas a poder encontrar el repositorio que vamos a esta utilizando durante el curso:
+https://github.com/LeonidasEsteban/responsive-design-portafolio
+
+Diseño elástico con max-width y flex-wrap
+
+Como te habrás dado cuenta tu proyecto está desordenado aunque carga en el viewport. Por esta razón en esta clase aprenderás
+a ordenar tu proyecto por medio del uso de contenedores flexibles, que varíen su tamaño según la amplitud con la que cuentan
+en diversos dispositivos y permitan una óptima visualización.
+
+Por otro lado, para hacer esto posible, aprenderás a aplicar las etiquetas de max-width y flex- wrap; éstas también te ayudarán
+a evitar que tu usuario necesite navegar la página de forma horizontal, pues la información se organizará en forma vertical
+para facilitar la experiencia.
+
+HErramienta
+https://flexboxfroggy.com/#es
+
