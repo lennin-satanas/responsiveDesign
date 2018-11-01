@@ -339,6 +339,31 @@ figure {
   height: inherit;
   flex-wrap: inherit;
 }
+.youtube-video{
+  /* width: 100%;
+  height: auto;  */
+  /* border: 1px solid red; */
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  
+ }
+
+/* height * 100 / width */
+
+ .flexible-video{
+   width: 100%;
+   height:0;
+   padding-top: 66.25%;
+   /* background: #026fff; */
+  position: relative;
+ }
+
+
 
 /* para deskstop firt se inicia desde el Media Query mas grande*/
 
@@ -370,7 +395,8 @@ figure {
     height: auto;
     /* max-width: 100%; */
   }
-}
+   
+ }
 
 
 @media screen and (max-width: 767px){
