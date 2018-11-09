@@ -17,7 +17,7 @@
     <meta name= viewport content="width=device-width, initial-scale=1"/>
   </head>
   <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -74,7 +74,7 @@
                 de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de nevegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
           </div>
           <figure class="project-imageContainer">
-            <img class="project-image" width="560" height="315" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
+            <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="prouyecto del curso de React Native">
           </figure>
         </article>
       </div>
@@ -121,11 +121,11 @@
               <!-- <video class=html-video src="https://github.com/LeonidasEsteban/responsive-design-portafolio/blob/master/videos/f8.mp4?raw=true"
               width="" height="" controls autoplay></video> -->
               <div class="flexible-video">
-                <iframe class="youtube-video" width="560" height="315"  
+                <!-- <iframe class="youtube-video" width="560" height="315"  
                 src="https://www.youtube.com/embed/DCRkJs_5fc8" frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
-               </iframe>
+               </iframe> -->
               </div>
             <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" /> -->
           </figure>
@@ -176,5 +176,48 @@
         </div>
       </div>
     </footer>  
+    <script>
+
+     //media queries con javascript
+    //  console.log(window.matchMedia('screen and (max-width: 767px)'));
+    const ipad = window.matchMedia('screen and (max-width: 767px)');
+     
+    //mostrando y ocultando el menu
+    //  console.log(document.querySelector('.menu'));
+    //  document.querySelector('.menu').classList.add('is-active');
+    const menu = document.querySelector('.menu');
+    // console.log(menu);
+    const burgerButtom = document.querySelector('#burger-menu');
+    // console.log(burgerButtom);
+    
+    ipad.addListener(validation)
+
+    function validation(event){
+      if(event.matches){
+        burgerButtom.addEventListener('click', hideShow)
+      }
+      else{
+        burgerButtom.removeEventListener('click', hideShow)
+      }
+      console.log(event.matches);
+    }
+    validation(ipad)
+    
+    function hideShow(){
+      if(menu.classList.contains('is-active')){
+        menu.classList.remove('is-active');
+      }
+      else{
+        menu.classList.add('is-active');
+      }   
+    }
+    
+
+
+
+
+
+
+    </script>
   </body>
 </html>
