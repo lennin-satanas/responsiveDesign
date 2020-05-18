@@ -4,7 +4,6 @@ declaraciones
 propiedades
 valores */
 
-
 /* seletor de etiqueta  header - section - article - nav */
 /* header {
   background: pink;
@@ -21,30 +20,28 @@ valores */
 /* selector de id # */
 /* #portafolio */
 
-
-
 /* gris oscuro = #1d252c */
 /* gris claro = #626262 */
 /* background gris = #1b2127 */
 /* celeste = #026fff */
 
-
 /* pagina para ver los iconos */
 /* https://icomoon.io/ */
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?la4jvz');
-  src:  url('../fonts/icomoon.eot?la4jvz#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?la4jvz') format('truetype'),
-    url('../fonts/icomoon.woff?la4jvz') format('woff'),
-    url('../fonts/icomoon.svg?la4jvz#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?la4jvz");
+  src: url("../fonts/icomoon.eot?la4jvz#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?la4jvz") format("truetype"),
+    url("../fonts/icomoon.woff?la4jvz") format("woff"),
+    url("../fonts/icomoon.svg?la4jvz#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: none;
   font-style: normal;
   font-weight: bold;
@@ -74,20 +71,18 @@ valores */
   content: "\e904";
 }
 
-
-
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sytem-ui;
   margin: 0;
 }
 
-h1, 
+h1,
 h2,
 h3,
 h4,
 h5,
-h6{
-  font-family: 'Fjalla One', sans-serif;
+h6 {
+  font-family: "Fjalla One", sytem-ui;
   font-weight: normal;
   /* font-style: italic; */
 }
@@ -95,9 +90,10 @@ h6{
 h1 {
   font-size: 40px;
   line-height: 1.5;
-  letter-spacing: -.2px;
+  letter-spacing: -0.2px;
   color: white;
   margin: 0;
+  max-width: 500px;
   /* margin: 100px 150px 70px 30px; */
   /* text-transform: uppercase; */
   /* text-decoration: dashed; */
@@ -108,7 +104,7 @@ h1 strong {
 h2 {
   color: #026fff;
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sytem-ui;
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 40px;
@@ -125,13 +121,11 @@ h2 {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
-.hero-image{
+.hero-image {
   object-fit: cover;
 }
-
 
 .portfolio {
   background: #fafafa;
@@ -175,7 +169,7 @@ h2 {
   font-size: 20px;
 }
 .project strong {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: "Fjalla One", sytem-ui;
 }
 /* .project-date {
   margin: 10px 0;
@@ -187,7 +181,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-
 .project-details {
   width: 50%;
 }
@@ -196,7 +189,7 @@ h2 {
   width: 50%;
 }
 
-.project-imageContainer img{
+.project-imageContainer img {
   max-width: 100%;
 }
 
@@ -282,7 +275,7 @@ figure {
 .event-list-title {
   margin-left: 20px;
 }
-.event { 
+.event {
   margin: 1%;
   width: 48%;
   flex-shrink: 0;
@@ -337,7 +330,6 @@ figure {
   font-size: 40px;
   color: white;
   text-decoration: none;
-
 }
 
 /* .social-link.twitter {
@@ -353,13 +345,12 @@ figure {
   background-image: url('../images/instagram.svg');
 } */
 
-
 .form-email input {
   border-color: gray;
   border-style: solid;
   border-radius: 5px;
   padding: 10px 20px 10px 25px;
-  background-image: url('../images/envelope.svg');
+  background-image: url("../images/envelope.svg");
   background-size: 15px 15px;
   background-repeat: no-repeat;
   background-position-y: center;
@@ -376,8 +367,8 @@ figure {
   margin-top: 10px;
 }
 
-.form-email h3 { 
-  font-family: 'Source Sans Pro', sans-serif;
+.form-email h3 {
+  font-family: "Source Sans Pro", sytem-ui;
 }
 
 .container {
@@ -391,51 +382,49 @@ figure {
   height: inherit;
   flex-wrap: inherit;
 }
-.youtube-video{
+.youtube-video {
   /* width: 100%;
   height: auto;  */
   /* border: 1px solid red; */
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  
- }
+}
 
 /* height * 100 / width */
 
- .flexible-video{
-   width: 100%;
-   height:0;
-   padding-top: 66.25%;
-   /* background: #026fff; */
+.flexible-video {
+  width: 100%;
+  height: 0;
+  padding-top: 66.25%;
+  /* background: #026fff; */
   position: relative;
- }
-
+}
 
 /* para deskstop firt se inicia desde el Media Query mas grande*/
 
-@media screen and (max-width: 1023px){
-  .event-list-title{
+@media screen and (max-width: 1023px) {
+  .event-list-title {
     margin-left: 0;
   }
-  .portfolio{
+  .portfolio {
     padding: 0;
     /* color: red !important;  */
   }
-  .container{
+  .container {
     padding: 0 1em;
   }
-  .hero{
+  .hero {
     height: auto;
     position: relative;
     overflow: hidden;
     padding: 2em;
   }
-  .hero-image{
+  .hero-image {
     position: absolute;
     z-index: 1;
     left: 0;
@@ -444,69 +433,63 @@ figure {
     bottom: 0;
     width: 100%;
   }
-  h1{
+  h1 {
     font-size: 2em;
     z-index: 2;
   }
-  .html-video{
+  .html-video {
     width: 100%;
     height: auto;
     /* max-width: 100%; */
   }
-  .burger-button{
+  .burger-button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgba(0,0,0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
     display: none;
     /*otra tecnica para centrar sin usas display: flex*/
     line-height: 40px;
-    text-align: center;  
-    position:fixed;
+    text-align: center;
+    position: fixed;
     z-index: 4;
     left: 5px;
     top: 5px;
     color: white;
-    
   }
-  
- }
+}
 
- @media screen and (max-width: 767px){
-
-  h2{
+@media screen and (max-width: 767px) {
+  h2 {
     font-size: 1.2em;
-    margin: .5em 0;
+    margin: 0.5em 0;
   }
-  .burger-button{
+  .burger-button {
     display: block;
   }
-  .header{
+  .header {
     display: block;
     height: auto;
   }
-  .header ol{
+  .header ol {
     display: block;
   }
-  .header ol li{
+  .header ol li {
     height: 50px;
-    
   }
-  .header a{
-    
+  .header a {
     justify-content: center;
     height: 40px;
     font-size: 2em;
     text-decoration: underline;
-    margin-bottom:  .5em;
-
+    margin-bottom: 0.5em;
   }
-  .header .logo{
+  .header .logo {
     text-align: center;
   }
-  .menu{
+  .menu {
     position: fixed;
-    background: rgba(5, 111, 255, .9);
+    background: rgba(5, 111, 255, 0.9);
     z-index: 3;
     top: 0;
     left: -100vw;
@@ -516,96 +499,97 @@ figure {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .3s
+    transition: 0.3s;
   }
 
-  .menu.is-active{
+  .menu.is-active {
     left: 0;
   }
-  .project{
+  .project {
     display: block;
   }
-  .project-imageContainer{
+  .project-imageContainer {
     width: auto;
     text-align: center;
   }
-  .project-details{
+  .project-details {
     width: auto;
-    font-size: 16px;    
+    font-size: 16px;
   }
 
-  .project-course, .project-date, .project-url{
-    margin: .3em 0;
+  .project-course,
+  .project-date,
+  .project-url {
+    margin: 0.3em 0;
   }
-  .project-title{
+  .project-title {
     font-size: 1.5em;
-    margin-bottom: .3em;
+    margin-bottom: 0.3em;
   }
-  .project-url{
+  .project-url {
     font-size: 1em;
   }
-  .project-course{
-    font-size: .7em;
+  .project-course {
+    font-size: 0.7em;
   }
-  .project-date{
+  .project-date {
     font-size: 1em;
   }
-  .project-description{
+  .project-description {
     font-size: 1em;
   }
-  .event{
+  .event {
     width: auto;
     flex-shrink: initial;
   }
-  .event img{
+  .event img {
     width: 100%;
   }
 }
-@media screen and (max-width: 480px){
-  h1{
+@media screen and (max-width: 480px) {
+  h1 {
     font-size: 1.5em;
   }
-  .project-details{
+  .project-details {
     width: auto;
-    font-size: 14px;    
+    font-size: 14px;
   }
-  .event-detail{
+  .event-detail {
     /*1em = 16px*/
-    margin: -2em .5em .5em; 
+    margin: -2em 0.5em 0.5em;
     padding: 1em;
   }
-  .contact{
+  .contact {
     height: auto;
     padding: 1.5em 0;
     text-align: center;
     display: block;
   }
-  .form-email button{
-    margin: 1em auto; 
+  .form-email button {
+    margin: 1em auto;
   }
 
-  .form-email h3{
+  .form-email h3 {
     margin-top: 0;
   }
-  .footer{
+  .footer {
     display: block;
     text-align: center;
     border: 1px solid transparent;
   }
-  .social-link{
+  .social-link {
     width: 40px;
     height: 40;
     background-size: 100%;
   }
-
 }
 
-@media screen and (max-width: 320px){
-  h1{
+@media screen and (max-width: 320px) {
+  h1 {
     font-size: 1.2em;
-    background: rgba(0,0,0,.5)
+    background: rgba(0, 0, 0, 0.5);
   }
-  .hero{
+  .hero {
     padding: 2em 1em;
   }
 }
